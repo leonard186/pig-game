@@ -12,7 +12,7 @@ GAME RULES:
 //define global variables
 let globalScore, currentScore,player;
 
-globalScore = [98, 98];
+globalScore = [0, 0];
 currentScore = 0;
 player = 0;
 
