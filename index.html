@@ -10,6 +10,39 @@
     </head>
 
     <body>
+      <div class="modal2">
+            <div class="winner-window">
+              <div class="winner-header">
+                <h3>Game Rules</h3>
+              </div>
+              <div class="winner-body">
+                <p>There are 2 players and each
+                  player can roll the dice as many
+                  times as he wishes as long as the
+                  following situations don't occur:</p>
+                  <br/>
+                <ul>
+                  <li>Do not throw a number 1 because
+                    you will loose your current score
+                  </li>
+
+                  <li>Do not throw a double more then once
+                    in a row because you will loose all your scores
+                  </li>
+                </ul>
+                <br/>
+                <p>Wichever player reaches the target score first is the winner</p>
+              </div>
+              <div class="winner-footer">
+                <p>Set target score</p>
+                <br/>
+                <div class="setScore">
+                <input id="setScore" value="">
+                <div class="button">Start the Game!</div>
+                </div>
+              </div>
+            </div>
+      </div>
         <div class="wrapper clearfix">
             <div class="player-0-panel active">
                 <div class="player-name" id="name-0">Player 1</div>
@@ -34,15 +67,28 @@
             <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
 
             <img src="dice-5.png" alt="Dice" class="dice">
+            <img src="dice-5.png" alt="Dice" class="dice2">
 
         <div class="modal">
               <div class="winner-window">
                 <div class="winner-header">
                   <span class="close">&times</span>
-                  <h3>The winner is <span id='player'></span>!</h3>
+                  <h3>The winner is <span class='player'></span>!</h3>
                 </div>
-                <div class="winner-body"></div>
-                <div class="winner-footer"></div>
+                <div class="winner-body">
+                  <h3>You beat your opponent with a score of <span class="score-index"></span></h3>
+                  <br/>
+                  <p>Statistics:</p>
+                  <br/>
+                  <p>Player 1 score: <span class="score-index1"> </p>
+                  <p>Player 2 score: <span class="score-index2"> </p>
+                  <br/>
+                  <p><span class='player-n'></span> won whith <span class="score-difference"></span> more points</p>
+
+                </div>
+                <div class="winner-footer">
+                  <h3>Try a new game and see who wins next!</h3>
+                </div>
               </div>
         </div>
         </div>
